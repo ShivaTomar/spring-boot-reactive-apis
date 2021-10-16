@@ -1,0 +1,27 @@
+GET http://localhost:8000/students/class/11th
+
+@Authorization: bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzaGl2YUBnbWFpbC5jb20iLCJyb2xlcyI6IlJPTEVfU1RVREVOVCIsImlhdCI6MTYzNDMxOTAyNiwiZXhwIjoxNjM0MzM3MDI2fQ.V6B6oUGOm62e1Pb-BdYi94N013p7jCbkwXHFgtPpcQQ
+
+%%%
+
+# Duration: 22 ms
+# URL: http://localhost:8000/students/class/11th
+
+# HTTP/1.1 200
+
+@Vary: Origin
+@Vary: Access-Control-Request-Method
+@Vary: Access-Control-Request-Headers
+@X-Content-Type-Options: nosniff
+@X-XSS-Protection: 1; mode=block
+@Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+@Pragma: no-cache
+@Expires: 0
+@X-Frame-Options: DENY
+@Content-Type: application/json
+@Transfer-Encoding: chunked
+@Date: Fri, 15 Oct 2021 19:28:51 GMT
+@Keep-Alive: timeout=60
+@Connection: keep-alive
+
+[]

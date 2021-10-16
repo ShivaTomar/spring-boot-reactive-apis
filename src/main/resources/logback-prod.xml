@@ -1,0 +1,21 @@
+<configuration>
+    <property name="APPLICATION_LOGS_DIR" value="./application_logs_prod"/>
+
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${APPLICATION_LOGS_DIR}/app.log</file>
+        <append>true</append>
+
+        <!-- daily rollover -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${APPLICATION_LOGS_DIR}/app.%d{yyyy-MM-dd}.log</fileNamePattern>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{"yyyy-MM-dd HH:mm:ss"} [%thread] %-5level %logger{36} - %msg%n%xEx</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="FILE"/>
+    </root>
+</configuration>
