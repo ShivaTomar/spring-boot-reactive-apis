@@ -2,9 +2,9 @@
 
 ### Swagger UI #
 
-![Alt text](screenshots/swagger1.png)
+![Alt text](screenshot/swagger1.png)
 
-![Alt text](screenshots/swagger2.png)
+![Alt text](screenshot/swagger2.png)
 
 # Steps to produce
 
